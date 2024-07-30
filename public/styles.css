@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+
+body {
+    background-color: #000000;
+    color:#ff0000;
+    font-family: 'Orbitron', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.login-container {
+    background-color: #000000;  
+    border-radius: 8px;
+    text-align: center;
+    width: 87%;
+    max-width: 400px;
+}
+
+.login-container h1 {
+    margin-bottom: 20px;
+}
+
+.input-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.input-group label {
+    display: block;
+    justify-content: center;
+    margin-bottom: 5px;
+}
+
+.input-group input {
+    width: 94%;
+    padding: 10px;
+    border: 1px solid #ff0000;
+    border-radius: 2px;
+    background-color: #000000;
+    color: #fff;
+}
+
+.login-button {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ff0000;
+    border-radius: 2px;
+    background-color: #ff0000;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* Chat Page Styles */
+body {
+    background-color: #000000;
+    color: #ff0000;
+    font-family: 'Orbitron', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+}
+
+.container {
+    width: 90%;
+    max-width: 800px;
+    background-color: #1a1a1d;
+    padding: 20px;
+    padding-top: 0;
+    border-radius: 4px;
+    box-shadow: 0 0 20px #ff0000;
+    position: relative;
+    border: 2px solid #ff0000;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 10px;
+    color: #ff0000;
+}
+
+#chat-box {
+    height: 400px;
+    overflow-y: auto;
+    border: 2px solid #ff0000;
+    padding: 10px;
+    background-color: #0b0b0d;
+    display: flex;
+    flex-direction: column;
+}
+
+.code-block {
+    font-family: 'Orbitron', sans-serif;
+    white-space: pre-wrap; /* Preserve whitespace */
+    background-color: #f4f4f4;
+    padding: 10px;
+    border: 1px solid #ddd;
+    overflow-x: auto; /* Handle long lines */
+}
+
+.input-container {
+    display: flex;
+    margin-top: 20px;
+}
+
+#message-input {
+    width: calc(100% - 80px);
+    padding: 10px;
+    border: 2px solid #ff0000;
+    background-color: #0b0b0d;
+    color: #ff0000;
+    outline: none;
+    border-right: none;
+}
+
+#send-button {
+    width: 80px;
+    padding: 10px;
+    border: 2px solid #ff0000;
+    background-color: #0b0b0d;
+    color: #ff0000;
+    cursor: pointer;
+    outline: none;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+#send-button:hover {
+    background-color: #ff0000;
+    color: #0b0b0d;
+}
+
+/* Glitch effect */
+.container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: inherit;
+    opacity: 0.5;
+    filter: url(#glitch);
+    z-index: -1;
+}
+
+@keyframes glitch {
+    0% { transform: translate(0); }
+    20% { transform: translate(-2px, 2px); }
+    40% { transform: translate(-2px, -2px); }
+    60% { transform: translate(2px, 2px); }
+    80% { transform: translate(2px, -2px); }
+    100% { transform: translate(0); }
+}
+
+.container::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: inherit;
+    opacity: 0.5;
+    filter: url(#glitch);
+    z-index: -1;
+    animation: glitch 0.5s infinite;
+}
+
+/* Base styles for desktop */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
+    /* Adjust container width and height for mobile */
+    .container {
+       
+        box-sizing: border-box; /* Ensure padding is included in the height */
+    }
+}
+
+/* Default styles for larger screens */
+.header {
+    padding-top: 0px;
+}
+
+/* Media query for mobile screens */
+.header {
+    padding-top: 0 !important; /* Override other styles */
+}
+
+.message {
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    width: fit-content;
+    max-width: 70%;
+    color: #ff0000;
+    font-family: 'Orbitron', sans-serif;
+}
+
+.sent {
+    background-color: #3a3a3a;
+    align-self: flex-start;
+    border: 1px solid #ff0000;
+}
+
+.received {
+    background-color: #2a2a2a;
+    align-self: flex-end;
+    border: 1px solid #ff0000;
+}
+
+svg {
+    position: absolute;
+    width: 0;
+    height: 0;
+}
